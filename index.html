@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- SEO Geral --->
+    <title>Calcule o seu IMC Online</title>
+    <meta name="description" content="Calcule o seu Índice de Massa Corporal online. Descubra o seu peso ideal. O site mais simples para saber o seu Índice de Massa Corporal">
+    <link rel="canonical" href="Link único da página">
+    <meta name="author" content="Luiz Eduardo">
+    <meta name="robots" content="index">
+    <meta name="googlebot" content="index">
+    <!-- Breve resumo da empresa ou do propósito do site -->
+    <meta name="summary" content="">
+    <!-- Breve descrição do assunto do seu site -->
+    <meta name="subject" content="">
+    <!-- Descreve o tema do website -->
+    <meta name="topic" content="">
+    <!-- Domínio completo ou o endereço web -->
+    <meta name="url" content="">
+    <!-- Verifica a propriedade do Console de Pesquisa para o Google
+    <meta name="google-site-verification" content="verification_token">
+    -->
+
+    <!---Links--->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/NovoProjetoO.png">
+
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js">
+    </script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header id="cabecalho">
+      <div class="container-header">
+        <h1>
+          <a href="index.html">Calcule o seu IMC</a>
+        </h1>
+        <p class="subtitulo">Calcule se você está no peso ideal com base no seu Índice de Massa Corporal.</p>
+
+         <!--- menu --->
+         <nav id="nav">
+          <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span>
+          </button>
+
+          <ul id="menu" role="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oqueimc.html">O que é IMC</a></li>
+            <li><a href="calcular.html">Como calcular</a></li>
+            <li><a href="limitacoes.html">Limitações do IMC</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr class="hr1">
+
+    <section id="conteudo-principal">
+      <div class="container-principal">
+        <div class="container-secundario">
+          <div class="inicio">
+            <p>Utilize o formulário abaixo para calcular o seu IMC.</p>
+          </div>
+
+          <div class="container-form-table">
+            <div class="container-filho">
+              <div class="input">
+                <div class="quilos">
+                  <p>Digite seu Peso:</p>
+                  <input class="peso" type="text" placeholder="Exemplo: 60.5" required maxlength="5">
+                </div>
+                <div class="metros">
+                  <p>Digite sua Altura:</p>
+                  <input class="altura" type="text" placeholder="Exemplo: 170 cm" required maxlength="5">
+                </div>
+              </div>
+
+              <div class="butao">
+                <button onclick="clicar()" class="envia">Calcular</button>
+                <button onclick="limpar()">Limpar</button>
+              </div>
+
+              <div class="calc-resultado">
+                <span>Resultado<br></span>
+                <strong></strong>
+                <p class="como-esta-a-saude"></p>
+              </div>
+            </div>
+            
+            <div class="table">
+              <table class="tabela">
+                <tr class="informação">
+                  <th>
+                    Resultado IMC
+                  </th>
+                  <th>
+                    Situação
+                  </th>
+                </tr>
+                <tr class="linha1">
+                  <td>
+                    Abaixo de 17
+                  </td>
+                  <td>
+                    Muito abaixo do peso
+                  </td>
+                </tr>
+                <tr class="linha2">
+                  <td>
+                    Entre 17 e 18,49
+                  </td>
+                  <td>
+                    Abaixo do peso
+                  </td>
+                </tr>
+                <tr class="linha3">
+                  <td>
+                    Entre 18,5 e 24,99
+                  </td>
+                  <td>
+                    Peso normal
+                  </td>
+                </tr>
+                <tr class="linha4">
+                  <td>
+                    Entre 25 e 29,99
+                  </td>
+                  <td>
+                    Acima do peso
+                  </td>
+                </tr>
+                <tr class="linha5">
+                  <td>
+                    Entre 30 e 34,99
+                  </td>
+                  <td>
+                    Obesidade I
+                  </td>
+                </tr>
+                <tr class="linha6">
+                  <td>
+                    Entre 35 e 39,99
+                  </td>
+                  <td>
+                    Obesidade II (severa)
+                  </td>
+                </tr>
+                <tr class="linha7">
+                  <td>
+                    Acima de 40
+                  </td>
+                  <td>
+                    Obesidade III (mórbida)
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!---Fim do conteúdo principal --->
+
+    <hr class="hr2">
+
+    <section id="calcular-imc">
+      <div class="container-calcular-imc">
+        <div class="container-conteudo">
+          <h2>Como calcular o IMC?</h2>
+          <p>Peso (em kg) - Com auxílio de uma balança, meça o seu peso corporal em kilogramas e anote o valor. Por exemplo: 82.</p>
+          <p>Altura (em metros) - Meça a sua altura em cm e anote o valor. Por exemplo: 176 cm, pois o site utiliza cm ao invés de m.</p>
+          <p>Altura ao quadrado - Com auxílio de uma calculadora, calcule o valor da sua altura ao quadrado e anote o valor. O jeito mais fácil é multiplicar o valor da altura por ele mesmo e depois dividir por 100. Por exemplo: 176 x 176 = 30976.</p>
+          <p>Resultado do IMC - Com auxílio da calculadora, divida o valor do seu peso pelo valor da sua altura ao quadrado. Por exemplo: 82 ÷ 309,76 = 26,472.</p>
+          <p>Tabela IMC - Confira a tabela do IMC para saber se você está abaixo do peso, dentro do peso ou com sobrepeso. Por exemplo: O IMC 26,472 indica uma pessoa acima do peso.</p>
+        </div>
+      </div>
+    </section><!---Fim da section calcular IMC--->
+
+    <section id="duvidas-imc">
+      <div class="container-duvidas-imc">
+        <div class="container-conteudo">
+          <h2>Dúvidas sobre o IMC</h2>
+          <p>O que significa IMC? - IMC é uma sigla utilizada para Índice de Massa Corporal, que é uma medida utilizada para medir a obesidade...<a href="oqueimc.html">Leia mais</a></p>
+          <p>Como fazer o cálculo do IMC? - O cálculo do IMC é feito dividindo o peso (em quilogramas) pela altura (em centímetros) ao quadrado.<a href="calcular.html">Veja aqui</a></p>
+          <p>Quais são as limitações do IMC? - O IMC pode apresentar alterações, dependendo de fatores como a prática de exercícios físicos...<a href="limitacoes.html">Leia mais</a></p>
+          <p>O cálculo do IMC é diferente para mulheres e homens? - Não, o IMC se calcula igual para homens e mulheres.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="rodape">
+      <div class="container-rodape">
+        <p><a href="index.html">Calculadora de IMC<br></a>Website desenvolvido por <span><a href="https://www.instagram.com/luizz_edduardoo_/" target="_blank"> Luiz Eduardo</a></span></p>
+  
+        <div class="instagram">
+          <a href="https://www.instagram.com/luizz_edduardoo_/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer> <!---Fim do Rodapé--->
+
+    <!---Scripts.JS--->
+    <script src="./js/calculadora.js"></script>
+    <script src="./js/enter.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+  </body>
+
+</html>
