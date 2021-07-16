@@ -3,6 +3,10 @@ function clicar(){
     let altura = document.querySelector(".altura").value;
 
     if(peso !== '' && altura !== ''){
+        if( document.querySelector("strong").style.fontSize = "0.7rem"){
+            document.querySelector("strong").style.fontSize = "1.7rem";
+        }
+
         altura = altura / 100;
         let imc = peso / Math.pow(altura, 2);
         var arredondado = parseFloat(imc.toFixed(2));
@@ -88,6 +92,10 @@ function clicar(){
 
 
 function limpar(){
+    if(document.querySelector("strong").style.fontSize === "0.7em"){
+        document.querySelector("strong").style.fontSize = "1.7rem";
+    }
+
     let strongg = document.querySelector("strong").innerHTML = '';
     let pesso = document.querySelector(".peso").value = '';
     let alturaa = document.querySelector(".altura").value = '';
