@@ -1,7 +1,19 @@
-# Calculadora de imc online
+<h1 align="center">
+  Calculadora de IMC online
+</h1>
 
-Este site foi criado com o objetivo de ajudar o máximo de pessoas que estão procurando saber o seu Índice de
-Massa Corporal de forma simples, rápida e sem enrolação, além de colocar em prática o meu conhecimento.
-O site foi desenvolvido utilizando HTML5, CSS3 e JAVASCRIPT além de ser totalmente responsivo.
+<p align="center">Site feito para calcular o IMC de forma rápida e sem enrolação!</p>
 
-Link do site: https://calculadoradeimc.netlify.app/
+<img src="https://github.com/luizeduardodev/calculadora-de-imc/blob/main/assets/img/resultado_projeto.png" min-width="1000px" max-width="1000px" width="1000px" alt="Imagem do projeto">
+
+<h4 align="center">
+  <a href="https://calculadoradeimc.netlify.app/">Clique aqui para visitar o projeto</a>
+</h4>
+
+## 💼 Tecnologias utilizadas
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+
+- HTML;
+- CSS;
+- Javascript;
+- Jquery;
