@@ -18,7 +18,7 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #ffff;
     padding: 20px;
     z-index: 10000;
     border-bottom: 1px solid black;
@@ -50,7 +50,7 @@ html{
 }
 #menu li a{
     padding: 5px;
-    color: black;
+    color: #000;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -65,8 +65,7 @@ html{
 }
 /* Conteúdo principal */
 #section-principal{
-    padding-top: 120px;
-    height: 90vh;
+    padding-top: 140px;
 }
 #section-principal .container-principal{
     width: 100%;
@@ -82,14 +81,13 @@ html{
 }
 #section-principal .container-principal .container-secundario .inicio{
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #section-principal .container-principal .container-secundario .container-form-table{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: space-around;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs{
     padding: 5px;
@@ -98,8 +96,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .quilos{
     font-size: 1.4rem;
@@ -107,39 +104,38 @@ html{
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .quilos input, .metros input{
     outline: none;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid black;
-    padding: 5px 0px;
-    text-align: center;
+    padding: 5px 2px;
     transition: .3s;
     margin-top: 5px;
+    font-size: 1.1rem;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .metros{
     font-size: 1.4rem;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    gap: 1rem;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao button{
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 2px;
     border: none;
     cursor: pointer;
-    background-color: black;
-    color: white;
-    transition: .3s;
+    background-color: #000;
+    color: #ffffff;
+    transition: all 0.15s ease-in-out;
     outline: none;
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1rem;
-    border: 1px solid black;
+    font-size: 0.9rem;
+    border: 1px solid #000;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao button:hover{
-    color: black;
+    color: #000;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado{
     display: flex;
@@ -148,11 +144,11 @@ html{
     height: 50px;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado span{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado .como-esta-a-saude{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 #section-principal  .container-principal .container-secundario .container-form-table .table{
     padding: 5px;
@@ -160,15 +156,15 @@ html{
 #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
     border-collapse: collapse;
     background-color: white;
-    color: black;
-    font-size: 1.2rem;
-    box-shadow: 4px 4px 5px black;
+    color: #000;
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 5px #000;
 }
 #section-principal  .container-principal .container-secundario .container-form-table .table .tabela .informação{
     font-size: 1.2rem;
 }
 #section-principal  .container-principal .container-secundario .container-form-table .table .tabela, th, td{
-    border: 1px solid black;
+    border: 1px solid #000;
     text-align: center;
 }
 #section-principal  .container-principal .container-secundario .container-form-table .table tr, th, td{
@@ -185,8 +181,8 @@ html{
 }
 #section-calcular-imc .container-calcular-imc .container-conteudo, #section-duvidas-imc .container-duvidas-imc .container-conteudo{
     text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 2px black;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px #000;
     padding: 30px;
     border-radius: 5px;
 }
@@ -202,8 +198,8 @@ html{
 /* Rodapé */
 #rodape{
     padding: 20px;
-    background-color: white;
-    border-top: 1px solid black;
+    background-color: #fff;
+    border-top: 1px solid #000;
 }
 #rodape .container-rodape{
     width: 100%;
@@ -216,7 +212,7 @@ html{
 }
 #rodape .container-rodape a{
     text-decoration: none;
-    color: red;
+    color: #ff0000;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -225,66 +221,60 @@ html{
     font-size: 1.1rem;
 }
 
-/* Responsividade - Tablet */
-@media(max-width:780px){
-    /* Cabeçalho */
-    #cabecalho{
-        padding: 10px;
+/* Responsividade - 1000px */
+@media screen and (max-width: 1000px){
+    /* Conteúdo principal */
+    #section-principal .container-principal{
+        width: 95%;
     }
-    #cabecalho .container-header h1{
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
-    #cabecalho .container-header .subtitulo{
-        width: 90%;
-        text-align: center;
+}
+
+/* Responsividade - 930px */
+@media screen and (max-width: 930px){
+    /* header */
+    #header .container-header h1 a{
         font-size: 1.3rem;
-        margin-bottom: 10px;
     }
     /* Menu Mobile */
     #menu{
-        display: block;
+        width: 50%;
         position: absolute;
-        width: 100%;
-        top: 155px;
-        right: 0px;
-        background: white;
-        height: 0;
-        transition: .6s;
-        z-index: 1000;
-        text-align: center;
-        visibility: hidden;
-        overflow-y: hidden;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+        top: 73px;
+        left: -490px;
+        height: 95vh;
         flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        transition: .6s;
+        visibility: hidden;
+        text-align: center;
+        z-index: 10000;
     }
     #nav.active #menu{
-        height: calc(100vh - 155px);
+        left: 0;
         visibility: visible;
-        /*overflow-y: auto;*/
-    }
-    #menu li{
-        margin-bottom: 30px;
-        padding: 10px;
     }
     #menu li a{
-        font-size: 1.3rem;
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+        border-radius: 0px;
+        padding: 10px;
     }
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        gap: .5rem;
+        color: #000;
     }
     #hamburger{
         display: block;
         width: 20px;
         border-top: 2px solid;
+        color: #000;
     }
     #hamburger::after, #hamburger::before{
         content: '';
@@ -306,264 +296,223 @@ html{
         transform: rotate(-135deg);
         top: -7px;
     }
-    /* Linha horizontal */
-    hr{
-        margin-bottom: 0px;
-    }
     /* Conteúdo principal */
-    #conteudo-principal .container-principal{
-        width: 95%;
-    }
-    #conteudo-principal .container-principal .container-secundario{
-        padding-top: 20px;
-    }
-    #conteudo-principal .container-principal .container-secundario .inicio{
-        margin-bottom: 10px;
-    }
-    #conteudo-principal .container-principal .container-secundario .container-form-table{
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .calc-resultado{
-        font-size: 1.8rem;
-    }
-    /* Tabela */
-    #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela{
-        margin-top: 0px;
-        font-size: 1rem;
-    }
-    #conteudo-principal .container-principal .container-secundario .container-form-table .table tr, th, td{
-        padding: 10px 15px;
-    }
-    /* Textos sobre o IMC */
-    #duvidas-imc{
-        padding-bottom: 50px;
-    }
-    #calcular-imc .container-calcular-imc, #duvidas-imc .container-duvidas-imc{
-        width: 95%;
-    }
-    #calcular-imc .container-calcular-imc .container-conteudo, #duvidas-imc .container-duvidas-imc .container-conteudo{
-        padding: 20px 30px;
-    }
-    #calcular-imc .container-calcular-imc .container-conteudo h2, #duvidas-imc .container-duvidas-imc .container-conteudo h2{
-        font-size: 1.8rem;
-    }
-    #calcular-imc .container-calcular-imc .container-conteudo p, #duvidas-imc .container-duvidas-imc .container-conteudo p{
+    #section-principal .container-principal .container-secundario .inicio{
         font-size: 1.2rem;
     }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .quilos{
+        font-size: 1.3rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .metros{
+        font-size: 1.3rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao button{
+        padding: 8px 20px;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado span{
+        font-size: 1.4rem;
+    }
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+        font-size: 1.1rem;
+    }
+    /* section texts */
+    #section-calcular-imc .container-calcular-imc .container-conteudo h2, #section-duvidas-imc .container-duvidas-imc .container-conteudo h2{
+        font-size: 1.4rem;
+    }
+    #section-calcular-imc .container-calcular-imc .container-conteudo p, #section-duvidas-imc .container-duvidas-imc .container-conteudo p{
+        font-size: 1rem;
+    }
     /* Rodapé */
-    #rodape .container-rodape{
-        width: 95%;
+    #rodape .container-rodape a{
+        font-size: 1.1rem;
     }
     #rodape .container-rodape p{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
-    #rodape .container-rodape span a{
-        font-size: 1.1rem;
-    }
-    #rodape .container-rodape .instagram a i{
-        font-size: 1.1rem;
-    }
-    
-    /* Responsividade - 450px */
-    @media(max-width:450px){ 
-        #cabecalho .container-header h1{
-            margin-bottom: 5px;
-        }
-        #cabecalho .container-header h1 a{
-            font-size: 1.8rem;
-        }
-        #cabecalho .container-header .subtitulo{
-            font-size: 1.2rem;
-        }
-        /* Menu Mobile */
-        #menu{
-            top: 143px;
-        }
-        #nav.active #menu{
-            height: calc(100vh - 143px);
-        }
-        #menu li{
-            margin-bottom: 20px;
-        }
-        /* Conteúdo principal */
-        #conteudo-principal{
-            padding-top: 0px;
-        }
-        #conteudo-principal .container-principal .container-secundario .inicio{
-            width: 90%;
-            font-size: 1.2rem;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        #conteudo-principal .container-principal .container-secundario .container-form-table{
-            flex-direction: column;
-        }
-        /* Resultado IMC */
-        #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .calc-resultado{
-            font-size: 1.6rem;
-            height: 100px;
-        }
-        #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .calc-resultado span{
-            font-size: 1.2em;
-        }
-        /* Tabela */
-        #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela{
-            margin-top: 30px;
-            font-size: 0.9rem;
-        }
-        #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela .informação{
-            font-size: 1rem;
-        }
-        #conteudo-principal .container-principal .container-secundario .container-form-table .table tr, th, td{
-            padding: 10px 25px;
-        }
-        /* Linha horizontal */
-        .hr2{
-            margin-top: 0px;
-        }
-        /* Textos sobre o IMC */
-        #calcular-imc .container-calcular-imc .container-conteudo h2, #duvidas-imc .container-duvidas-imc .container-conteudo h2{
-            font-size: 1.6rem;
-        }
-        #calcular-imc .container-calcular-imc .container-conteudo p, #duvidas-imc .container-duvidas-imc .container-conteudo p{
-            font-size: 1.1rem;
-        }
-        /* Rodape */
-        #rodape{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #rodape .container-rodape p{
-            font-size: 1rem;
-        }
-        #rodape .container-rodape span a{
-            font-size: 1rem;
-        }
-        #rodape .container-rodape .instagram a i{
-            font-size: 1rem;
-        }
+}
 
-        /* Responsividade - 375px */
-        @media(max-width:375px){
-            #cabecalho .container-header h1 a{
-                font-size: 1.7rem;
-            }
-            #cabecalho .container-header .subtitulo{
-                font-size: 1rem;
-            }
-            /* Menu Mobile */
-            #menu{
-                top: 135px;
-            }
-            #nav.active #menu{
-                height: calc(100vh - 135px);
-            }
-            #menu li a{
-                font-size: 1.2rem;
-            }
-            /* Conteúdo principal */
-            #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .input .quilos{
-                font-size: 1.4rem;
-            }
-            #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .input .metros{
-                font-size: 1.4rem;
-            }
-            #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .butao button{
-                padding: 8px 15px;
-            }
-            /* Resultado IMC */
-            #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .calc-resultado{
-                font-size: 1.5rem;
-            }
-            /* Tabela */
-            #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela{
-                font-size: 0.8rem;
-            }
-            #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela .informação{
-                font-size: 0.9rem;
-            }
-            #conteudo-principal .container-principal .container-secundario .container-form-table .table tr, th, td{
-                padding: 10px 20px;
-            }
-            /* Textos sobre o IMC */
-            #calcular-imc .container-calcular-imc .container-conteudo h2, #duvidas-imc .container-duvidas-imc .container-conteudo h2{
-                font-size: 1.5rem;
-            }
-            #calcular-imc .container-calcular-imc .container-conteudo p, #duvidas-imc .container-duvidas-imc .container-conteudo p{
-                font-size: 1rem;
-            }
-            /* Rodape */
-            #rodape .container-rodape p{
-                font-size: 0.9rem;
-            }
-            #rodape .container-rodape span a{
-                font-size: 0.9rem;
-            }
-            #rodape .container-rodape .instagram a i{
-                font-size: 0.9rem;
-            }
+/* Responsividade - 780px */
+@media screen and (max-width: 780px){
+    /* Menu Mobile */
+    #menu li a{
+        font-size: 1.2rem;
+    }
+    /* Conteúdo principal */
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+        font-size: 1rem;
+    }
+    /* section texts */
+    #section-calcular-imc, #section-duvidas-imc{
+        padding: 50px 20px;
+    }
+}
 
-            /* Responsividade - 320px */
-            @media(max-width:320px){
-                #cabecalho .container-header h1 a{
-                    font-size: 1.5rem;
-                }
-                #cabecalho .container-header .subtitulo{
-                    font-size: 0.9rem;
-                }
-                  /* Menu Mobile */
-                #menu{
-                    top: 131px;
-                }
-                #nav.active #menu{
-                    height: calc(100vh - 131px);
-                }
-                #menu li a{
-                    font-size: 1.1rem;
-                }
-                /* Conteudo principal */
-                #conteudo-principal .container-principal .container-secundario .inicio{
-                    font-size: 1.1rem;
-                }
-                #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .input .quilos{
-                    font-size: 1.3rem;
-                }
-                #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .input .metros{
-                    font-size: 1.3rem;
-                }
-                #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .butao button{
-                    padding: 8px 15px;
-                }
-                /* Resultado IMC */
-                #conteudo-principal .container-principal .container-secundario .container-form-table .container-filho .calc-resultado{
-                    font-size: 1.4rem;
-                }
-                 /* Tabela */
-                #conteudo-principal .container-principal .container-secundario .container-form-table .table .tabela{
-                    font-size: 0.8rem;
-                }
-                #conteudo-principal .container-principal .container-secundario .container-form-table .table tr, th, td{
-                    padding: 8px 10px;
-                }
-                 /* Textos sobre o IMC */
-                #calcular-imc .container-calcular-imc .container-conteudo h2, #duvidas-imc .container-duvidas-imc .container-conteudo h2{
-                    font-size: 1.3rem;
-                }
-                #calcular-imc .container-calcular-imc .container-conteudo p, #duvidas-imc .container-duvidas-imc .container-conteudo p{
-                    font-size: 0.9rem;
-                }
-                /* Rodape */
-                #rodape .container-rodape p{
-                    font-size: 0.8rem;
-                }
-                #rodape .container-rodape span a{
-                    font-size: 0.8rem;
-                }
-                #rodape .container-rodape .instagram a i{
-                    font-size: 0.8rem;
-                }
-            }
-        }   
+/* Responsividade - 680px */
+@media screen and (max-width: 680px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.2rem;
+    }
+    /* Conteúdo principal */
+    #section-principal{
+        padding-top: 100px;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table{
+        flex-direction: column;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado{
+        height: 120px;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado .como-esta-a-saude{
+        font-size: 1.2rem;
+    }
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+        font-size: 1rem;
+    }
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela .informação{
+        font-size: 1rem;
+    }
+    /* section texts */
+    #section-calcular-imc .container-calcular-imc .container-conteudo h2, #section-duvidas-imc .container-duvidas-imc .container-conteudo h2{
+        font-size: 1.3rem;
+    }
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 1rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade - 575px */
+@media screen and (max-width: 575px){
+    /* Menu Mobile */
+    #menu li a{
+        width: 100%;
+    }
+    /* Rodapé */
+    #rodape .container-rodape p{
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsividade - 500px */
+@media screen and (max-width: 500px){
+    /* Menu Mobile */
+    #menu li a{
+        font-size: 1.1rem;
+    }
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 0.9rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsividade - 475px */
+@media screen and (max-width: 475px){
+    /* Conteúdo principal */
+    #section-principal .container-principal .container-secundario .inicio{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    /* section texts */
+    #section-calcular-imc .container-calcular-imc .container-conteudo h2, #section-duvidas-imc .container-duvidas-imc .container-conteudo h2{
+        font-size: 1.2rem;
+    }
+    #section-calcular-imc .container-calcular-imc .container-conteudo p, #section-duvidas-imc .container-duvidas-imc .container-conteudo p{
+        font-size: 0.9rem;
+    }
+    /* Rodapé */
+    #rodape{
+        text-align: center;
+    }
+}
+
+/* Responsividade - 400px */
+@media screen and (max-width: 400px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.1rem;
+    }
+    /* Menu Mobile */
+    #menu li a{
+        font-size: 1rem;
+    }
+    /* Conteúdo principal */
+    #section-principal .container-principal .container-secundario .inicio{
+        font-size: 1rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .quilos{
+        font-size: 1.2rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .metros{
+        font-size: 1.2rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao button{
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado span{
+        font-size: 1.3rem;
+    }
+    /* section texts */
+    #section-calcular-imc .container-calcular-imc .container-conteudo h2, #section-duvidas-imc .container-duvidas-imc .container-conteudo h2{
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsividade - 375px */
+@media screen and (max-width: 375px){
+     /* Conteúdo principal */
+     #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsividade - 335px */
+@media screen and (max-width: 335px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1rem;
+    }
+    /* Conteúdo principal */
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+       font-size: 0.8rem;
+    }
+}
+
+/* Responsividade - 320px */
+@media screen and (max-width: 320px){
+     /* Conteúdo principal */
+     #section-principal .container-principal .container-secundario .inicio{
+        font-size: 0.9rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .quilos{
+        font-size: 1.1rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .input .metros{
+        font-size: 1.1rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .butao button{
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    #section-principal .container-principal .container-secundario .container-form-table .container-inputs .calc-resultado span{
+        font-size: 1.2rem;
+    }
+    /* Conteúdo principal */
+    #section-principal  .container-principal .container-secundario .container-form-table .table .tabela{
+        font-size: 0.7rem;
+    }
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 0.8rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 0.7rem;
     }
 }

@@ -114,66 +114,71 @@ html{
     font-size: 1.1rem;
 }
 
-/* Responsividade - Tablet */
-@media(max-width:780px){
-    /* Cabeçalho */
-    #cabecalho{
-        padding: 10px;
+/* Responsivivade - 1000px*/
+@media screen and (max-width: 1000px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.4rem;
     }
-    #cabecalho .container-header h1{
-        font-size: 1.8rem;
-        margin-bottom: 10px;
+    /* section texts */
+    #o-que-imc .container-oqueimc{
+        width: 95%;
     }
-    #cabecalho .container-header .subtitulo{
-        width: 90%;
-        text-align: center;
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 1.1rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 1rem;
+    }
+}
+
+/* Responsivivade - 900px*/
+@media screen and (max-width: 900px){
+    /* header */
+    #header .container-header h1 a{
         font-size: 1.3rem;
-        margin-bottom: 10px;
     }
     /* Menu Mobile */
     #menu{
-        display: block;
+        width: 50%;
         position: absolute;
-        width: 100%;
-        top: 155px;
-        right: 0px;
-        background: white;
-        height: 0;
-        transition: .6s;
-        z-index: 1000;
-        text-align: center;
-        visibility: hidden;
-        overflow-y: hidden;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+        top: 73px;
+        left: -490px;
+        height: 95vh;
         flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        transition: .6s;
+        visibility: hidden;
+        text-align: center;
+        z-index: 10000;
     }
     #nav.active #menu{
-        height: calc(100vh - 155px);
+        left: 0;
         visibility: visible;
-        /*overflow-y: auto;*/
-    }
-    #menu li{
-        margin-bottom: 30px;
-        padding: 10px;
     }
     #menu li a{
-        font-size: 1.3rem;
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+        border-radius: 0px;
+        padding: 10px;
     }
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        gap: .5rem;
+        color: #000;
     }
     #hamburger{
         display: block;
         width: 20px;
         border-top: 2px solid;
+        color: #000;
     }
     #hamburger::after, #hamburger::before{
         content: '';
@@ -195,156 +200,117 @@ html{
         transform: rotate(-135deg);
         top: -7px;
     }
-    /* Linha horizontal */
-    hr{
-        margin-bottom: 0px;
-    }
-    /* Textos sobre o que é o IMC */
-    #o-que-imc{
-        padding-bottom: 50px;
-    }
-    #o-que-imc .container-oqueimc{
-        width: 95%;
-    }
-    #o-que-imc .container-oqueimc .container-conteudo{
-        padding: 20px 30px;
-    }
-    #o-que-imc .container-oqueimc .container-conteudo h1{
-        font-size: 1.8rem;
+    /* section texts */
+    #o-que-imc .container-oqueimc .container-conteudo h2{
+        font-size: 1.4rem;
     }
     #o-que-imc .container-oqueimc .container-conteudo p{
-        font-size: 1.2rem;
-    }
-    /* Rodapé */
-    #rodape .container-rodape{
-        width: 95%;
-    }
-    #rodape .container-rodape p{
         font-size: 1.1rem;
-    }
-    #rodape .container-rodape span a{
-        font-size: 1.1rem;
-    }
-    #rodape .container-rodape .instagram a i{
-        font-size: 1.1rem;
-    }
-    
-    /* Responsividade - 450px */
-    @media(max-width:450px){
-        #cabecalho .container-header h1{
-            margin-bottom: 5px;
-        }
-        #cabecalho .container-header h1 a{
-            font-size: 1.8rem;
-        }
-        #cabecalho .container-header .subtitulo{
-            font-size: 1.2rem;
-        }
-        /* Menu Mobile */
-        #menu{
-            top: 143px;
-        }
-        #nav.active #menu{
-            height: calc(100vh - 143px);
-        }
-        #menu li{
-            margin-bottom: 20px;
-        }
-        /* Textos sobre o que é o IMC */
-        #o-que-imc .container-oqueimc .container-conteudo h1{
-            font-size: 1.6rem;
-        }
-        #o-que-imc .container-oqueimc .container-conteudo p{
-            font-size: 1.1rem;
-        }
-        /* Rodape */
-        #rodape{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #rodape .container-rodape p{
-            font-size: 1rem;
-        }
-        #rodape .container-rodape span a{
-            font-size: 1rem;
-        }
-        #rodape .container-rodape .instagram a i{
-            font-size: 1rem;
-        }
-
-        /* Responsividade - 375px */
-        @media(max-width:375px){
-            #cabecalho .container-header h1 a{
-                font-size: 1.7rem;
-            }
-            #cabecalho .container-header .subtitulo{
-                font-size: 1rem;
-            }
-            /* Menu Mobile */
-            #menu{
-                top: 135px;
-            }
-            #nav.active #menu{
-                height: calc(100vh - 135px);
-            }
-            #menu li a{
-                font-size: 1.2rem;
-            }
-            /* Textos sobre o que é o IMC */
-            #o-que-imc .container-oqueimc .container-conteudo h1{
-                font-size: 1.5rem;
-            }
-            #o-que-imc .container-oqueimc .container-conteudo p{
-                font-size: 1rem;
-            }
-            /* Rodape */
-            #rodape .container-rodape p{
-                font-size: 0.9rem;
-            }
-            #rodape .container-rodape span a{
-                font-size: 0.9rem;
-            }
-            #rodape .container-rodape .instagram a i{
-                font-size: 0.9rem;
-            }
-
-            /* Responsividade - 320px */
-            @media(max-width:320px){
-                #cabecalho .container-header h1 a{
-                    font-size: 1.5rem;
-                }
-                #cabecalho .container-header .subtitulo{
-                    font-size: 0.9rem;
-                }
-                /* Menu Mobile */
-                #menu{
-                    top: 131px;
-                }
-                #nav.active #menu{
-                    height: calc(100vh - 131px);
-                }
-                #menu li a{
-                    font-size: 1.1rem;
-                }
-                /* Textos sobre o que é o IMC */
-                #o-que-imc .container-oqueimc .container-conteudo h1{
-                    font-size: 1.3rem;
-                }
-                #o-que-imc .container-oqueimc .container-conteudo p{
-                    font-size: 0.9rem;
-                }
-                 /* Rodape */
-                 #rodape .container-rodape p{
-                    font-size: 0.8rem;
-                }
-                #rodape .container-rodape span a{
-                    font-size: 0.8rem;
-                }
-                #rodape .container-rodape .instagram a i{
-                    font-size: 0.8rem;
-                }
-            }
-        }
     }
 }
 
+/* Responsivivade - 770px*/
+@media screen and (max-width: 770px){
+    #menu li a{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsivivade - 700px*/
+@media screen and (max-width: 700px){
+    /* section texts */
+    #o-que-imc .container-oqueimc .container-conteudo h2{
+        font-size: 1.3rem;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo p{
+        font-size: 1rem;
+    }
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 1rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsivivade - 550px*/
+@media screen and (max-width: 550px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.3rem;
+    }
+    #menu li a{
+        font-size: 1.2rem;
+    }
+    /* section texts */
+    #o-que-imc{
+        padding: 120px 0;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo h2{
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsivivade - 525px*/
+@media screen and (max-width: 525px){
+    /* Rodapé */
+    #rodape .container-rodape a{
+        font-size: 0.9rem;
+    }
+    #rodape .container-rodape p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+/* Responsivivade - 500px*/
+@media screen and (max-width: 500px){
+    #menu li a{
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsivivade - 400px*/
+@media screen and (max-width: 400px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.2rem;
+    }
+    #menu li a{
+        font-size: 1rem;
+    }
+}
+
+/* Responsivivade - 375px*/
+@media screen and (max-width: 375px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1.1rem;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo h2{
+        font-size: 1.1rem;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo p{
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsivivade - 320px*/
+@media screen and (max-width: 320px){
+    /* header */
+    #header .container-header h1 a{
+        font-size: 1rem;
+    }
+    #menu li a{
+        font-size: 0.9rem;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo h2{
+        font-size: 1rem;
+    }
+    #o-que-imc .container-oqueimc .container-conteudo p{
+        font-size: 0.8rem;
+    }
+  
+}
